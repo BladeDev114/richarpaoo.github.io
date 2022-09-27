@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow: hidden;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+body main .center-triangle {
+  width: 300px;
+}
+body main .center-triangle .triangle {
+  fill: #fff;
+  stroke: #1a1a1a;
+  stroke-width: 1;
+  transition: 100ms;
+}
+body main .center-triangle .triangle-shadow {
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  transition: 200ms;
+}
+body header, body footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 75px;
+  height: inherit;
+}
+body header {
+  left: 0;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  white-space: nowrap;
+}
+body header .upper {
+  position: relative;
+  transform: rotate(-90deg) translateX(-100px);
+}
+body header .upper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  margin-left: 1rem;
+  background: #1a1a1a;
+}
+body header .lower {
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg) translateX(85px);
+}
+body header .lower svg {
+  width: 25px;
+}
+body header .lower h6 {
+  padding-left: 1rem;
+}
+body footer {
+  right: 0;
+}
+body footer .upper .barcode {
+  transform: rotate(90deg) translateX(60px) !important;
+}
+body footer .lower {
+  transform: rotate(90deg) translateX(-50px);
+}
+body footer .lower img {
+  width: 75px;
+}

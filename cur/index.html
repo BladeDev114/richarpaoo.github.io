@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>鼠标滑动</title>
+  <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <section class="upper">BY RICHARPAO</section>
+  <section class="lower">
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.87 31.87">
+        <path class="cls-1" d="M15.94,31.87,13,24.57A10.32,10.32,0,0,0,7.3,18.88L0,15.94,7.3,13A10.32,10.32,0,0,0,13,7.3L15.94,0l2.94,7.3A10.32,10.32,0,0,0,24.57,13l7.3,2.95-7.3,2.94a10.32,10.32,0,0,0-5.69,5.69Z" />
+      </svg>
+    </div>
+    <h6>在卡片内移动指针</h6>
+  </section>
+</header>
+<main>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="center-triangle">
+    <g class="triangle-shadow">
+      <polygon points="220 112.61 282 220 344 327.39 220 327.39 96 327.39 158 220 220 112.61" />
+    </g>
+    <polygon class="triangle" points="200 92.61 262 200 324 307.39 200 307.39 76 307.39 138 200 200 92.61" />
+  </svg>
+</main>
+<footer>
+  <section class="upper"><svg class="barcode"></svg></section>
+  <section class="lower">
+    <a href="https://richarpao.github.io/" target="_blank">
+      <h1>RCP</h1>
+    </a>
+  </section>
+</footer>
+<div class="curzr" hidden>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <defs>
+      <style>
+        .line {
+          stroke: #1a1a1a;
+          stroke-linecap: round;
+          stroke-miterlimit: 10;
+        }
+      </style>
+    </defs>
+    <line class="line line-v" x1="50" y1="40" x2="50" y2="60" />
+    <line class="line line-h" x1="40" y1="50" x2="60" y2="50" />
+  </svg>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
